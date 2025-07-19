@@ -1,0 +1,249 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body */
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffeef2;
+  padding: 60px 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  padding: 10px 20px;
+  background: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+}
+
+/* Featured Section */
+.features {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.flower-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.flower-item {
+  margin: 10px;
+  width: 200px;
+  background-color: #eee;
+  border-radius: 100px 100px 0 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  }
+
+.flower-item img {
+  width: 100%;
+  border-radius: 20px;
+  background: #f1f1f1;
+}
+
+/* Services */
+.icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px 10%;
+  background: #f3ececf8;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.icons div {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.icons img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Deal */
+.deal {
+  background: #ffeef2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.deal-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.deal-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.deal-text h2 span {
+  color: #e91e63;
+}
+
+.deal-text .btn {
+  padding: 10px 20px;
+  background: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.deal-img {
+  flex: 1;
+  text-align: center;
+}
+
+.deal-img img {
+  max-width: 100%;
+}
+
+/* Instagram */
+.instagram {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.insta-gallery {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.insta-gallery img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Newsletter */
+.newsletter {
+  /* background: #f8f8f8; */
+  background-image: url(/Rectangle\ 9.png);
+  text-align: center;
+  padding: 60px 10%;
+  max-width: 850px;
+  margin: 0 auto;
+    }
+
+.newsletter form {
+  margin-top: 20px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  max-width: 80%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+footer h2 span {
+  color: #e91e63;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .hero,
+  .deal {
+    flex-direction: column;
+  }
+
+  .flower-cards,
+  .insta-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}
